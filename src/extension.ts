@@ -6,6 +6,8 @@ import path = require("path");
 import fs = require("fs");
 import { template as tpl } from "./code-template";
 
+const lineWidth = 40; // 中文40，英文80
+
 // this method is called when your extension is deactivated
 export function deactivate() {}
 
@@ -23,12 +25,14 @@ let prevBar: StatusBarItem;
 let jumpBar: StatusBarItem;
 
 let globalStates: any = null;
-const lineWidth = 80;
 // 字符串占位符
 function convertToCode(tpl: string, lines: any[]) {
   for (var i = 0; i < lines.length; i++) {
     let lineText = lines[i];
-    if (lineText.length > 80) {
+    lineText = lineText.trim();
+    console.log(lineText);
+    console.log(lineText.length);
+    if (lineText.length > lineWidth) {
       let splitNum = Math.floor(lineText.length / lineWidth);
       for (let j = 1; j <= splitNum; j++) {
         lineText = strInsert(lineText, j * 3 - 3 + j * lineWidth, `\n// `);

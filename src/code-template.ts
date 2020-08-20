@@ -20,9 +20,9 @@ function activate(context) {
 	//{8}
 	//{9}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {10}
+		//{10}
 
-		// {11}
+		//{11}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -74,11 +74,11 @@ function activate(context) {
 	// {26}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {27}
-	// {28}
-	// {29}
+//{27}
+//{28}
+//{29}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {30}
+//{30}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -86,12 +86,12 @@ function activate(context) {
 }
 exports.activate = activate;
 function deactivate() {}
-// {31}
-// {32}
+//{31}
+//{32}
 const vscode = require('vscode');
 
-// {33}
-// {34}
+//{33}
+//{34}
 
 /**
  * @param {vscode.ExtensionContext} 
@@ -99,17 +99,17 @@ const vscode = require('vscode');
  */
 function activate(context) {
 
-	// {36}
-	// {37}
+//{36}
+//{37}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {38}
-	//{39}
-	//{40}
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {41}
+//{38}
+//{39}
+//{40}
+  let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
+//{41}
 
-		// {42}
+//{42}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -117,10 +117,10 @@ function activate(context) {
 }
 exports.activate = activate;
 
-// {43}
+//{43}
 function deactivate() {}
 
-// {44}
+//{44}
 
 /**
  * @param {vscode.ExtensionContext} 
@@ -136,9 +136,9 @@ function activate(context) {
 	// {49}
 	// {50}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {51}
+	//{51}
 
-		// {52}
+	//{52}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -165,7 +165,7 @@ function activate(context) {
 	// {59}
 	// {60}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {61}
+	//{61}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -195,13 +195,13 @@ function activate(context) {
 	// {68}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {69}
+	//{69}
 	//{70}
 	//{71}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {72}
+	//{72}
 
-		// {73}
+	//{73}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -220,17 +220,17 @@ function deactivate() {}
  */
 function activate(context) {
 
-	// {77}
-	// {78}
+	//{77}
+	//{78}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {79}
-	// {80}
-	// {81}
+	//{79}
+	//{80}
+	//{81}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {82}
+	//{82}
 
-		// {83}
+	//{83}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -249,15 +249,15 @@ function deactivate() {}
  */
 function activate(context) {
 
-	// {87}
-	// {88}
+	//{87}
+	//{88}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {89}
-	// {90}
-	// {91}
+	//{89}
+	//{90}
+	//{91}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {92}
+	//{92}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
@@ -269,15 +269,15 @@ function activate(context) {
  */
 function activate(context) {
 
-	// {94}
-	// {95}
+	//{94}
+	//{95}
 	console.log('Congratulations, your extension "codenovel" is now active!');
 
-	// {96}
-	// {97}
-	// {98}
+	//{96}
+	//{97}
+	//{98}
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
-		// {99}
+	//{99}
 		vscode.window.showInformationMessage('Hello World!');
 	});
 
