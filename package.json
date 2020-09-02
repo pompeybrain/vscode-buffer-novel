@@ -25,7 +25,7 @@
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
-    "deploy": "npm run compile && rsync -a --exclude '.vscode*' ./ ~/.vscode/extensions/code-novel/ ",
+    "deploy": "npm run compile && rsync -a --exclude '.vscode*' --exclude '.git' ./ ~/.vscode/extensions/code-novel/ ",
     "lint": "eslint src --ext ts",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
